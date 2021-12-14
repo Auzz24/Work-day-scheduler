@@ -57,16 +57,15 @@ textarea{
   color: white;
 }
 
+.container li {
+  list-style: none;
+height: 100px;
+text-align: center;
+}
+
 .saveBtn {
   list-style-type: none; 
-  justify-content: center;
-  margin: 0; padding: 0; width: 60%; 
-  margin: 0 3px 3px 3px; 
-  padding: 0.4em; 
-  padding-left: 1.5em; 
   font-size: 1.4em; 
-  height: 50px;
-  width: 150px;
   background-color: #06AED5;
   color: white;
 }
@@ -78,30 +77,12 @@ textarea{
 
 #sortable { 
   list-style-type: none; 
-  margin: 0; padding: 0; width: 60%; 
   
 }
 #sortable li { 
-  margin: 0 3px 3px 3px; 
-  padding: 0.4em; 
-  padding-left: 1.5em; 
   font-size: 1.4em; 
-  height: 100px;
-  width: 300px;
   border: solid 2px black;
  }
 
-#sortable li span { 
-  position: absolute; 
+#sortable li span {
   margin-left: -1.3em; }
-
-.col {
-  border: solid 1px black;
-}
-
-li {
-  text-decoration: none;
-  border: solid 1px black;
-  height: 50px;
-  width: 150px;
-}
