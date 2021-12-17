@@ -5,7 +5,25 @@ $( function() {
   $("#sortable").disableSelection();
 } );
 
+function save (event){
+  var task = (event.target.previousSibling.value)
+  var time = (event.target.previousSibling.previousSibling.textContent)
+  localStorage.setItem (time, task)
+}
+var buttonLi = document.querySelectorAll (".saveBtn")
+console.log(buttonLi)
+for ( i = 0; i < buttonLi.length; i++) {
+  var button = buttonLi[i];
+  
+  button.addEventListener ("click", save)
+}
 
+var h3Array = document.querySelectorAll("h3")
+for ( i = 0; i < h3Array.length; i++) {
+  var h3 = h3Array[i];
+  var task = localStorage.getItem(h3.textContent)
+  h3.nextSibling.value = task
+}
 
 
 //ATTEMPTS AT TEXT CHANGE 

@@ -78,8 +78,16 @@ text-align: center;
   list-style-type: none; 
   
 }
+
+li {
+  display: flex;
+  justify-content: space-between;
+}
 #sortable li { 
   font-size: 1.4em; 
+ }
+
+ ul textarea {
   border: solid 2px black;
  }
 
