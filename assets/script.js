@@ -1,3 +1,10 @@
+$(document).ready(function(){
+var currentDay = $("#currentDay")
+currentDay.text(moment().format('MMMM Do YYYY, h:mm'));
+}
+);
+
+
 $( function() {
   $( "#sortable" ).sortable({
     placeholder: "ui-state-height"
@@ -25,6 +32,15 @@ for ( i = 0; i < h3Array.length; i++) {
   h3.nextSibling.value = task
 }
 
+function hourFun (){
+
+$(".time-block").each(function(index){
+  var currentHour = moment().hours();
+  console.log(currentHour)
+  
+}
+);
+};
 
 //ATTEMPTS AT TEXT CHANGE 
 
