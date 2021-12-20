@@ -10,6 +10,8 @@ textarea{
   resize: none;
   color: #000000;
   padding: 10px;
+  height: 100px;
+  width: 350px;
 }
 
 .jumbotron {
